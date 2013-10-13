@@ -1,25 +1,21 @@
 {% extends "_base.html" %}
 
+{% block nav %}{% endblock nav %}
+
 {% block content %}
-<h1>{{ title }}</h1>
 
-<h2>{{ subhead }}</h2>
+<div class="jumbotron">
+  <h1>{{ headline }}</h1>
+  <p>{{ intro }}</p>
+</div>
 
-<p>{{ intro }}</p>
+<div class="row">
+  <div class="col-md-6">
+    {{ read_file("_docs/install.md")|markdown }}
+  </div>
 
-<blockquote>
-{{ quote|markdown }}
-</blockquote>
-
-<table class="table">
-<tbody>
-{% for row in data %}
-<tr>
-  <td>{{ row.name }}</td>
-  <td>{{ row.born }}</td>
-  <td>{{ row.died }}</td>
-</tr>
-{% endfor %}
-</tbody>
-</table>
+  <div class="col-md-6">
+    {{ read_file("_docs/install.md")|markdown }}
+  </div>
+</div>
 {% endblock content %}

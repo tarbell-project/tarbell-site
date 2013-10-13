@@ -23,7 +23,7 @@ def read_file(path, absolute=False):
     otherwise path is assumed to be relative to Tarbell template root dir.
     """
     if not absolute:
-        path = os.path.join(os.path.dirname(__file__), '..', path)
+        path = os.path.join(os.path.dirname(__file__), "..", path)
 
     try:
         return open(path, 'r').read()
@@ -64,10 +64,14 @@ def drop_cap(text):
         content = ''
     return Markup(content)
 
-
+import datetime
 @blueprint.app_template_filter()
-def format_date(string, format='%b. %d, %Y', convert_tz=None):
-    parsed = dateutil.parser.parse(string)
+def format_date(value, format='%b. %d, %Y', convert_tz=None):
+    if isinstance(value, float) or isinstance(value, int):
+        seconds = (value - 25569) * 86400.0
+        parsed = datetime.datetime.utcfromtimestamp(seconds)
+    else:
+        parsed = dateutil.parser.parse(value)
     if convert_tz:
         local_zone = dateutil.tz.gettz(convert_tz)
         parsed = parsed.astimezone(tz=local_zone)
@@ -171,4 +175,6 @@ def linebreaksbr(eval_ctx, value):
 @blueprint.app_template_filter()
 def markdown(value):
     """Run text through markdown process"""
+    if not value:
+        return ""
     return Markup(Markdown.markdown(value))
