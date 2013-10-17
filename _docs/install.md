@@ -10,15 +10,11 @@ You may need to run this command as root, e.g. <code>sudo pip install tarbell</c
 
 <pre class="large">tarbell newproject</pre>
 
-You will be asked to set up Tarbell if this is your first time.
+You will be asked to set up Tarbell the first time you run a Tarbell command.
 
-## Requirements
+Once your project is created, run a preview server:
 
-* __Google API application and secrets file__ to create and read Google spreadsheets
-* __Amazon Web Services Account__ to publish to Amazon S3
+<pre class="large">tarbell switch newproject</pre>
 
-Platform specific requirements:
+Visit [http://127.0.0.1:5000/](http://127.0.0.1:5000/) in your browser to preview your project.
 
-* __OS X__: XCode with command-line tools
-* __Linux__: git, python (with development packages)
-* __Windows__: Not supported

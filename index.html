@@ -2,28 +2,34 @@
 
 {% block css %}
 {{ super() }}
+<link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css' />
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 {% endblock css %}
 
-{% block nav %}{% endblock nav %}
+{% block bodyattrs %}data-spy="scroll" data-target="#navbar"{% endblock %}
 
 {% block content %}
 
-<div class="jumbotron">
-  <h1>{{ headline }}</h1>
-  <p>{{ intro }}</p>
-</div>
-
-<div class="row">
-  <div class="col-md-6">
-    {{ read_file("_docs/install.md")|markdown }}
+<section id="install">
+  <div class="intro row">
+    <img src="img/ida-tarbell.jpg" alt="{{ title }}" />
+    <h1>{{ title }}</h1>
+    <p>{{ intro }}</p>
   </div>
 
-  <div class="col-md-6">
-    {{ read_file("_docs/resources.md")|markdown }}
-  </div>
-</div>
+  <div class="row">
+    <div class="col-md-5">
+      {{ read_file("_docs/install.md")|markdown }}
+    </div>
 
-{{ tutorial|rst }}
+    <div class="col-md-7">
+      {{ read_file("_docs/resources.md")|markdown }}
+    </div>
+  </div>
+</section>
+
+<section id="tutorial">
+  {{ tutorial|rst }}
+</section>
 
 {% endblock content %}

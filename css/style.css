@@ -1,5 +1,39 @@
+body {
+  font-size: 16px;
+  padding-top: 51px;
+  font-family: Georgia, serif;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "EB Garamond", serif;
+}
+
+section {
+    padding-top: 71px;
+    margin-top: -51px;
+    display: inline-block;
+}
+
 pre.large {
-    background-color: #333;
-    color: #eee;
-    font-size: 18px;
+  background-color: #333;
+  color: #eee;
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+.intro img {
+  float: left;
+  width: 80px;
+}
+.intro h1 {
+  font-size: 60px;
+  line-height: 68px;
+  margin-top: 0;
+  margin-left: 95px;
+}
+.intro p {
+  font-size: 20px;
+  line-height: 24px;
+  padding-left: 8px;
+  margin-left: 95px;
 }
