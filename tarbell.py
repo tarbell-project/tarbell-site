@@ -2,9 +2,9 @@ import tarbell
 import os
 from flask import Blueprint
 
-blueprint = Blueprint('tarbell_site', __name__)
+blueprint = Blueprint('tarbell_readme', __name__)
 
-NAME = "tarbell-site"
+NAME = "tarbell-readme"
 
 TITLE = "Tarbell"
 
