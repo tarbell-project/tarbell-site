@@ -1,12 +1,14 @@
-from jinja2 import evalcontextfilter, Markup
-from time import time
 import re
 import dateutil.parser
 import dateutil.tz
-from flask import Blueprint
 import markdown as Markdown
 import os
+
+from flask import Blueprint
+from jinja2 import evalcontextfilter, Markup
+from time import time
 from scrubber import Scrubber
+from docutils.core import publish_parts
 
 NAME = "Basic Bootstrap 3 template"
 
@@ -178,3 +180,13 @@ def markdown(value):
     if not value:
         return ""
     return Markup(Markdown.markdown(value))
+
+
+@blueprint.app_template_filter()
+def rst(value):
+    """Run text through markdown process"""
+    if not value:
+        return ""
+    value = publish_parts(value, writer_name="html")["html_body"]
+    return Markup(value)
+
