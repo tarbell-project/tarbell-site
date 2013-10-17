@@ -19,3 +19,22 @@ S3_BUCKETS = {
 
 # Repository this project is based on (used for updates)
 TEMPLATE_REPO_URL = "https://github.com/newsapps/tarbell-template"
+
+import tarbell
+import os
+from flask import Blueprint
+
+blueprint = Blueprint('tarbell_site', __name__)
+
+def get_tutorial():
+    path = os.path.join(os.path.dirname(tarbell.__file__), "docs/tutorial.rst")
+    try:
+        return open(path, 'r').read()
+    except IOError:
+        return None
+
+@blueprint.app_context_processor
+def context_processor():
+    return {
+        'tutorial': get_tutorial(),
+    }
