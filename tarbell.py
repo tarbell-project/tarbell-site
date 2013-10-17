@@ -11,8 +11,8 @@ TITLE = "Tarbell"
 # SPREADSHEET_KEY = ""
 
 S3_BUCKETS = {
-    "production": "s3://apps.chicagotribune.com//tarbell-site/",
-    "staging": "s3://apps.beta.tribapps.com//tarbell-site/",
+    "production": "s3://tarbell.tribapps.com",
+    "staging": "s3://tarbell.beta.tribapps.com",
 }
 
 # Repository this project is based on (used for updates)
