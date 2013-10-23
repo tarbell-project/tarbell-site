@@ -2,7 +2,7 @@
 
 <p>On most operating systems, just run:</p>
 
-<pre class="large">pip install tarbell</pre>
+<pre class="large">pip install --pre tarbell==0.9-beta1</pre>
 
 You may need to run this command as root, e.g. <code>sudo pip install tarbell</code>.
 
