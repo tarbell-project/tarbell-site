@@ -5,6 +5,8 @@ to start projects based on common templates. Tarbell optionally allows project
 data to be managed with Google Spreadsheets and easy project publishing with
 Amazon S3.
 
+The most recent version of Tarbell is 0.9-beta1 (0.9b1).
+
 ## Resources
 
 * [Documentation](http://tarbell.readthedocs.org)
