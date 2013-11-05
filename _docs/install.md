@@ -2,9 +2,9 @@
 
 <p>On most operating systems, just run:</p>
 
-<pre class="large">pip install tarbell==0.9b1</pre>
+<pre class="large">pip install tarbell==0.9b2</pre>
 
-You may need to run this command as root, e.g. <code>sudo pip install tarbell==0.9b1</code>.
+You may need to run this command as root, e.g. <code>sudo pip install tarbell==0.9b2</code>.
 
 ## Create a new project
 
