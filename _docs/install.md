@@ -2,13 +2,13 @@
 
 <p>On most operating systems, just run:</p>
 
-<pre class="large">pip install tarbell==0.9b2</pre>
+<pre class="large">pip install tarbell==0.9b3</pre>
 
-You may need to run this command as root, e.g. <code>sudo pip install tarbell==0.9b2</code>.
+You may need to run this command as root, e.g. <code>sudo pip install tarbell==0.9b3</code>.
 
 ## Create a new project
 
-<pre class="large">tarbell newproject projectname</pre>
+<pre class="large">tarbell newproject</pre>
 
 You will be asked to set up Tarbell the first time you run a Tarbell command.
 
