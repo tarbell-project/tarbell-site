@@ -1,5 +1,6 @@
 import tarbell
 import os
+
 from flask import Blueprint
 
 blueprint = Blueprint('tarbell_readme', __name__)
