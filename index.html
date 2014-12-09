@@ -6,11 +6,10 @@
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 {% endblock css %}
 
-{% block bodyattrs %}data-spy="scroll" data-target="#navbar"{% endblock %}
+{% block nav %}{% endblock nav %}
 
 {% block content %}
-
-<section id="install">
+<div class="container">
   <div class="intro row">
     <img src="img/ida-tarbell.jpg" alt="{{ title }}" />
     <h1>{{ title }}</h1>
@@ -18,14 +17,12 @@
   </div>
 
   <div class="row">
-    <div class="col-md-6">
-      {{ read_file("_docs/install.md")|markdown }}
-    </div>
-
-    <div class="col-md-6">
+    <div class="col-md-8">
       {{ read_file("_docs/resources.md")|markdown }}
     </div>
+    <div class="col-md-4">
+      {{ read_file("_docs/install.md")|markdown }}
+    </div>
   </div>
-</section>
-
+</div>
 {% endblock content %}

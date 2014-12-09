@@ -1,19 +1,18 @@
 ## About Tarbell
 
-Tarbell is a lightweight web publishing platform. Tarbell makes it quick and easy
-to start projects based on common templates. Tarbell optionally allows project
-data to be managed with Google Spreadsheets and easy project publishing with
-Amazon S3.
+Tarbell makes it simple to put your work on the web, whether you’re a team of one or a dozen. With Tarbell, you can collaboratively build beautiful websites and publish them with ease.
 
-The most recent version of Tarbell is 0.9-beta4 (0.9b4).
+Tarbell makes use of familiar, flexible tools to take the magic (and frustration) out of publishing to the web. Google spreadsheets handle content management, so changes to your stories are easy to make without touching a line of code. Step-by-step prompts help you set up and configure your project, so that publishing it is a breeze.
+
+The most recent version of Tarbell is 1.0 (released Dec. 8, 2014).
 
 ## Resources
 
-* [Documentation](http://tarbell.readthedocs.org)
-* [Github](https://github.com/newsapps/flask-tarbell) 
-* [Issues](https://github.com/newsapps/flask-tarbell/issues)
+* [**Install Tarbell**](http://tarbell.readthedocs.org/en/1.0/install.html) | [Tutorial](http://tarbell.readthedocs.org/en/1.0/install.html) | [Documentation](http://tarbell.readthedocs.org)
+* [**File an issue**](https://github.com/tarbell-project/tarbell/issues) | [Source code](https://github.com/tarbell-project/tarbell/issues)
+* [**Follow on Twitter @tarbellproject**](https://twitter.com/tarbellproject) 
 
 <hr />
 
-Tarbell is a [Chicago Tribune News Applications Team](http://apps.chicagotribune.com)
-project. 
+Tarbell was created by the [Chicago Tribune News Applications Team](http://apps.chicagotribune.com)
+project.
