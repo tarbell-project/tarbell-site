@@ -15,4 +15,4 @@ The most recent version of Tarbell is 1.0 (released Dec. 8, 2014).
 <hr />
 
 Tarbell was created by the [Chicago Tribune News Applications Team](http://apps.chicagotribune.com)
-project.
+and is maintained by her contributors.
