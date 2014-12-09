@@ -8,8 +8,8 @@ The most recent version of Tarbell is 1.0 (released Dec. 8, 2014).
 
 ## Resources
 
-* [**Install Tarbell**](http://tarbell.readthedocs.org/en/1.0/install.html) | [Tutorial](http://tarbell.readthedocs.org/en/1.0/install.html) | [Documentation](http://tarbell.readthedocs.org)
-* [**File an issue**](https://github.com/tarbell-project/tarbell/issues) | [Source code](https://github.com/tarbell-project/tarbell/issues)
+* [**Install Tarbell**](http://tarbell.readthedocs.org/en/1.0/install.html) | [Tutorial](http://tarbell.readthedocs.org/en/1.0/tutorial.html) | [Documentation](http://tarbell.readthedocs.org)
+* [**File an issue**](https://github.com/tarbell-project/tarbell/issues) | [Source code](https://github.com/tarbell-project/tarbell/)
 * [**Follow on Twitter @tarbellproject**](https://twitter.com/tarbellproject) 
 
 <hr />
