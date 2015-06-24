@@ -4,7 +4,7 @@ Tarbell makes it simple to put your work on the web, whether you’re a team of 
 
 Tarbell makes use of familiar, flexible tools to take the magic (and frustration) out of publishing to the web. Google spreadsheets handle content management, so changes to your stories are easy to make without touching a line of code. Step-by-step prompts help you set up and configure your project, so that publishing it is a breeze.
 
-The latest version of Tarbell is 1.0.1 (released June 22, 2015).
+The latest version of Tarbell is 1.0.1 (released June 22, 2015, read the <a href="https://groups.google.com/forum/#!topic/tarbell-project/lKTIVUgf1hg">release notes</a>).
 
 ## Resources
 
