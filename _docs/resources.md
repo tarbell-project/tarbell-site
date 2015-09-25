@@ -6,8 +6,6 @@ Tarbell makes use of familiar, flexible tools to take the magic (and frustration
 
 The latest version of Tarbell is 1.0.4 (released Sept 24, 2015, read the <a href="https://groups.google.com/forum/#!topic/tarbell-project/WsvweIVp11Y">release notes</a>).
 
-{% if %}
-
 ## Resources
 
 * [**Install Tarbell**](http://tarbell.readthedocs.org/en/1.0.4/install.html) | [Tutorial](http://tarbell.readthedocs.org/en/1.0.4/tutorial.html) | [Documentation](http://tarbell.readthedocs.org)
